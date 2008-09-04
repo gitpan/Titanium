@@ -1,4 +1,8 @@
 Revision history for Titantium.
 
+1.00 Thu Sep  4 06:01:36 EDT 2008
+  * Declaring Stable  
+  * Clarify copyright/license to be the same as Perl
+
 0.90_1 Fri Aug  8 20:56:21 EDT 2008
   * Initial release on unsuspecting world. 

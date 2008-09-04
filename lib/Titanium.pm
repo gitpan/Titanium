@@ -2,7 +2,7 @@ package Titanium;
 use base 'CGI::Application';
 
 use vars '$VERSION';
-$VERSION = '0.90_1';
+$VERSION = '1.00';
 
 # Just load a few recommended plugins by default. 
 use CGI::Application::Plugin::Forward;
@@ -1095,28 +1095,22 @@ while many another contributed to CGI::Application and the related plugins.
 
 =head1 LICENSE
 
-This module is free software; you can redistribute it and/or modify it
-under the terms of either:
+Copyright (C) 2008, Mark Stosberg. 
+
+This module is free software; you can redistribute it and/or modify it under
+the terms of either:
 
 a) the GNU General Public License as published by the Free Software
 Foundation; either version 1, or (at your option) any later version,
 
 or
 
-b) the "Artistic License" which comes with this module.
+b) the "Artistic License".
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See either
 the GNU General Public License or the Artistic License for more details.
-
-You should have received a copy of the Artistic License with this
-module, in the file ARTISTIC.  If not, I'll be glad to provide one.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
-USA
 
 =cut
 
