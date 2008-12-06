@@ -2,7 +2,7 @@ package Titanium;
 use base 'CGI::Application';
 
 use vars '$VERSION';
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 # Just load a few recommended plugins by default. 
 use CGI::Application::Plugin::Forward;
@@ -1037,10 +1037,6 @@ http://mark.stosberg.com/darcs_hive/titanium
 than depending on the large CPAN dependency chain being installed, I would like
 an option for users to download the full stack of dependencies, so that you can
 just unpack a single file and go.
-
-* Titanium depends on L<Module::Starter::Plugin::CGIApp|Module::Starter::Plugin::CGIApp>
-which provides C<cgiapp-starter>, a project kick-start tool. I'd like to provide 
-'titanium-starter'
 
 * I'd like a plugin to cope with the URI-encoding that Dreamweaver does to templates 
 that may just mean packing and releasing the following code as a plug-in:

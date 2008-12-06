@@ -1,6 +1,6 @@
 ---
 name: Titanium
-version: 1.00
+version: 1.01
 author:
   - 'Mark Stosberg <mark@summersault.com>'
 abstract: A strong, lightweight web application famework
@@ -12,7 +12,7 @@ requires:
   CGI::Application::Plugin::DBH: 0
   CGI::Application::Plugin::DebugScreen: 0
   CGI::Application::Plugin::DevPopup: 0
-  CGI::Application::Plugin::ErrorPage: 0
+  CGI::Application::Plugin::ErrorPage: 1.2
   CGI::Application::Plugin::FillInForm: 0
   CGI::Application::Plugin::Forward: 0
   CGI::Application::Plugin::LogDispatch: 0
@@ -22,7 +22,7 @@ requires:
   CGI::Application::Plugin::ValidateRM: 0
   CGI::Application::Server: 0
   CGI::Application::Standard::Config: 0
-  Module::Starter::Plugin::CGIApp: 0
+  Module::Starter::Plugin::CGIApp: 0.05
   Test::WWW::Mechanize::CGIApp: 0
 generated_by: Module::Build version 0.2808
 meta-spec:
@@ -31,6 +31,6 @@ meta-spec:
 provides:
   Titanium:
     file: lib/Titanium.pm
-    version: 1.00
+    version: 1.01
 resources:
   license: http://dev.perl.org/licenses/
