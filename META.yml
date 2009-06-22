@@ -1,9 +1,9 @@
 ---
 name: Titanium
-version: 1.01
+version: 1.02
 author:
   - 'Mark Stosberg <mark@summersault.com>'
-abstract: A strong, lightweight web application famework
+abstract: A strong, lightweight web application framework
 license: perl
 requires:
   CGI::Application: 4
@@ -24,13 +24,13 @@ requires:
   CGI::Application::Standard::Config: 0
   Module::Starter::Plugin::CGIApp: 0.05
   Test::WWW::Mechanize::CGIApp: 0
-generated_by: Module::Build version 0.2808
+generated_by: Module::Build version 0.32
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
 provides:
   Titanium:
     file: lib/Titanium.pm
-    version: 1.01
+    version: 1.02
 resources:
-  license: http://dev.perl.org/licenses/
+  license: ~

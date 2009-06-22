@@ -2,7 +2,7 @@ package Titanium;
 use base 'CGI::Application';
 
 use vars '$VERSION';
-$VERSION = '1.01';
+$VERSION = '1.02';
 
 # Just load a few recommended plugins by default. 
 use CGI::Application::Plugin::Forward;
@@ -25,7 +25,7 @@ use CGI::Application::Standard::Config;
 
 =head1 NAME
 
-Titanium - A strong, lightweight web application famework
+Titanium - A strong, lightweight web application framework
 
 =head1 SYNOPSIS
 
@@ -42,7 +42,7 @@ Titanium - A strong, lightweight web application famework
 	$c->run_modes([qw/
         form_display
         form_process
-	/);
+	/]);
   }
   sub form_display { 
         my $c = shift;
@@ -53,7 +53,7 @@ Titanium - A strong, lightweight web application famework
         return $t->output;
   }
   sub form_process {
-       my $ c= shift;
+       my $c = shift;
 
        # Validate the form against a profile. If it fails validation, re-display
        # the form for the user with their data pre-filled and the errors highlighted. 

@@ -1,5 +1,5 @@
 NAME
-    Titanium - A strong, lightweight web application famework
+    Titanium - A strong, lightweight web application framework
 
 SYNOPSIS
   Coding
@@ -14,7 +14,7 @@ SYNOPSIS
             $c->run_modes([qw/
             form_display
             form_process
-            /);
+            /]);
       }
       sub form_display { 
             my $c = shift;
@@ -25,7 +25,7 @@ SYNOPSIS
             return $t->output;
       }
       sub form_process {
-           my $ c= shift;
+           my $c = shift;
 
            # Validate the form against a profile. If it fails validation, re-display
            # the form for the user with their data pre-filled and the errors highlighted. 
