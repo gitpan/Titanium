@@ -2,7 +2,7 @@ package Titanium;
 use base 'CGI::Application';
 
 use vars '$VERSION';
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 # Just load a few recommended plugins by default. 
 use CGI::Application::Plugin::Forward;
@@ -495,19 +495,28 @@ sending content before your HTTP header, you are probably breaking this rule.
 
 B<THE RUN MODE OF LAST RESORT: "AUTOLOAD">
 
-If Titanium is asked to go to a run mode which doesn't exist
-it will usually croak() with errors.  If this is not your desired
-behavior, it is possible to catch this exception by implementing
-a run mode with the reserved name "AUTOLOAD":
+If Titanium is asked to go to a run mode which doesn't exist,
+by default it will return an error page to the user, implemented
+like this:
+
+  return $c->error(
+    title => 'The requested page was not found.',
+    msg => "(The page tried was: ".$c->get_current_runmode.")"
+  );
+
+See L<CGI::Application::Plugin::ErrorPage> for more details on the built-in
+error page system.  If this is not your desired behavior for handling unknown
+run mode requests, implement your own run mode with the reserved name
+"AUTOLOAD":
 
   $c->run_modes(
 	"AUTOLOAD" => \&catch_my_exception
   );
 
-Before Titanium calls croak() it will check for the existence
-of a run mode called "AUTOLOAD".  If specified, this run mode will in
-invoked just like a regular run mode, with one exception:  It will
-receive, as an argument, the name of the run mode which invoked it:
+Before Titanium invokes its own error page handling it will check for the
+existence of a run mode called "AUTOLOAD".  If specified, this run mode will in
+invoked just like a regular run mode, with one exception:  It will receive, as
+an argument, the name of the run mode which invoked it:
 
   sub catch_my_exception {
 	my $c = shift;
@@ -517,9 +526,7 @@ receive, as an argument, the name of the run mode which invoked it:
 	return $output;
   }
 
-This functionality could be used for a simple human-readable error
-screen, or for more sophisticated application behaviors.
-
+This functionality could be for more sophisticated application behaviors.
 
 =head3 start_mode()
 

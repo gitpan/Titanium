@@ -1,5 +1,9 @@
 Revision history for Titantium.
 
+1.03 June 26, 2009
+  (No code changes)
+  * Update AUTOLOAD docs reflect that we load the ErrorPage plugin.
+
 1.02 June 22, 2009
   (No code changes in this release)
   * Fix "framework" typo (David Blank-Edelman)

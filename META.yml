@@ -1,6 +1,6 @@
 ---
 name: Titanium
-version: 1.02
+version: 1.03
 author:
   - 'Mark Stosberg <mark@summersault.com>'
 abstract: A strong, lightweight web application framework
@@ -31,6 +31,6 @@ meta-spec:
 provides:
   Titanium:
     file: lib/Titanium.pm
-    version: 1.02
+    version: 1.03
 resources:
   license: ~
