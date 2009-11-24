@@ -135,7 +135,7 @@ DESCRIPTION
       webapp.cgi : The Instance Script which implements your Application Module.
       $c         : Used in instance methods to pass around the
                    current object. (Sometimes referred as "$self" in other projects.)
-                   Think of the "$c" as short for "controller". 
+                   Think of the "$c" as short for "controller".
 
   Script/Dispatching Methods
     By inheriting from Titanium you have access to a number of built-in
@@ -550,6 +550,7 @@ DESCRIPTION
             # such as to load settings from a database or file.
       }
 
+
       # In MyApplication.pm:
       package MyApplication;
       use base 'MySuperclass';
@@ -582,6 +583,7 @@ DESCRIPTION
             # such as to implement run mode specific
             # authorization functions.
       }
+
 
       # In MyApplication.pm:
       package MyApplication;
@@ -756,7 +758,7 @@ DESCRIPTION
         my $c = shift;
 
         my $dbh = $c->dbh;
-     } 
+     }
 
     Easy access to a DBI database handle. The database connection is not
     created until the first call to "dbh()". See
@@ -777,7 +779,7 @@ DESCRIPTION
     more features and details.
 
    cfg()
-        $c->cfg('root_uri'); 
+        $c->cfg('root_uri');
 
     Easy access to parameters loaded from a config file, which can be stored
     in one of several formats, including YAML and Pure Perl. For more
@@ -795,7 +797,7 @@ DESCRIPTION
 
    check_rm()
       my ($results, $err_page) = $c->check_rm('form_display','_form_profile');
-      return $err_page if $err_page; 
+      return $err_page if $err_page;
 
     Easy form validation with Data::FormValidator. If the validation fails,
     we'll re-display the form for the user with their data pre-filled and
@@ -821,15 +823,15 @@ DESCRIPTION
     CGI::Application::Plugin::FillInForm for details.
 
    error()
-      $c->error( title => '..', msg => '..' ); 
+      $c->error( title => '..', msg => '..' );
 
     Provide quick error messages back to the user for exceptional cases. You
     can provide your own custom designed template or use the default one
     built-in. See CGI::Application::Plugin::ErrorPage.
 
    stream_file()
-     $c->stream_file($file);                  
- 
+     $c->stream_file($file);
+
     If your run mode is outputing an image or a spreadsheet instead of an
     HTML page, you may want to stream the output. This method takes care of
     the boring details of buffering, headers and MIME types. See
@@ -990,7 +992,7 @@ TODO
                     $ht_params->{filter} = [\&ht_uri_decode] 
             }
       });
- 
+
 SEE ALSO
     *   CGI::Application
 

@@ -22,6 +22,10 @@ my $build = Module::Build->new
                     'CGI::Application::Plugin::Stream'      => 0,
                     'CGI::Application::Plugin::ValidateRM'  => 0,
                     'CGI::Application::Standard::Config'    => 0,
+
+                    # This is an indirect dependency. We explictly require it here to make
+                    # sure that we get a new enough version.
+                    'Compress::Raw::Zlib'                   => 2.0,
                     'Module::Starter::Plugin::CGIApp'       => 0.05,
                     'Test::WWW::Mechanize::CGIApp'          => 0,
                },

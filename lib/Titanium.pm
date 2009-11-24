@@ -2,7 +2,7 @@ package Titanium;
 use base 'CGI::Application';
 
 use vars '$VERSION';
-$VERSION = '1.03';
+$VERSION = '1.04';
 
 # Just load a few recommended plugins by default. 
 use CGI::Application::Plugin::Forward;

@@ -1,11 +1,15 @@
 Revision history for Titantium.
 
+1.04 Nov  23, 2009
+  (No code changes)
+  * Update Build.PL to explicitly require a newer version of Compress::Raw::Zlib, an indirect dependency.
+
 1.03 June 26, 2009
   (No code changes)
   * Update AUTOLOAD docs reflect that we load the ErrorPage plugin.
 
 1.02 June 22, 2009
-  (No code changes in this release)
+  (No code changes)
   * Fix "framework" typo (David Blank-Edelman)
   * Fix typo in "setup()" example. (Justin Simoni).
 
